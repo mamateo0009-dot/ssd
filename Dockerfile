@@ -3,7 +3,7 @@
 # =========================
 # Use latest Rust to support edition2024 features
 # getrandom v0.4.1 requires rust >= 1.85
-FROM rust:1.85-slim AS rust-builder
+FROM rust:latest-slim AS rust-builder
 
 RUN apt-get update && apt-get install -y \
     protobuf-compiler \
